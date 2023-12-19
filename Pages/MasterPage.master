@@ -1,0 +1,24 @@
+﻿
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="TuProyecto.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Encuestas</title>
+</head>
+<body>
+    <form id="form2" runat="server">
+        <div>
+            <asp:Menu ID="Menu2" runat="server" Orientation="Horizontal">
+                <Items>
+                    <asp:MenuItem Text="Llenar Encuesta" NavigateUrl="~/LlenarEncuesta.aspx" />
+                    <asp:MenuItem Text="Ver Reporte" NavigateUrl="~/VerReporte.aspx" />
+                </Items>
+            </asp:Menu>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,11 @@
+
+
+USE EncuestasDB;
+
+CREATE TABLE Encuestas (
+    Id INT PRIMARY KEY IDENTITY(1,1),
+    Nombre NVARCHAR(100) NOT NULL,
+    Edad INT CHECK (Edad BETWEEN 18 AND 50) NOT NULL,
+    Correo NVARCHAR(100) CONSTRAINT CK_Correo CHECK (Correo LIKE '%@%'),
+    PartidoPolitico NVARCHAR(50) NOT NULL
+);
